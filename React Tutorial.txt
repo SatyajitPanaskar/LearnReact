@@ -1,0 +1,23 @@
+React Tutorial
+Q. What is React?
+=> React js also know as react , is a popular javascript library for building user interfaces. it was devloped by facebook and open sourced in 2013, react is widely used for creating interactive and dynamic web applications.
+- At its core, react follows componet-based architecture , where the interface is divided into reusable components. each component manages its own state and can be composed together to build complex uls. react utlizes a virtual DOM(Document object model) to efficently update and render the UI components.
+- Some Key features and concepts of react include :
+ 1> Components : react allows devlopers to create reausable UI components, which encapsulate their own logic and state. these components can be composed together to build complex interfaces.
+ 2> JSx:JSX(javaScript xml) is an extension to javscript used in react . it enables developers to write HTML-like syntax within Javascript, making it easier to describe and render componets.
+ 3> Virtual DOM : React uses a virtual representation of the DOM, which is a lightweight copy of the actual HTML DOM. this virtual DOM allows react to efficently upadate and render only the necessary components when the application state changes.
+ 4> Unidirectional Data flow : React follows a unidirectional data flow also known as one-way binding.it means that data in react application flows in a single direction, from parent components child components. this helps to maintain a predictable state and makes it easire to debug and understand the application.
+ 5>React Hooks : introduced in react 16.8 hooks are functions that allow developers to use state and other react features in functional components instead of relying on class components. hooks provide a simpler and more concise way of managing state and lifecylce events.
+  6> React Native : React has a sibling framework called react native, which is used for building native mobile application. it allows developers to write mobile apps using react components-based approach, and the code can be reused across different platfroms like IOS and Android.
+--Note 
+   React has a vast ecosystem of libraries and tools that complement its capabilities. it is often used in combination with other technologies such as redux for state management, react router for routing and axios for api request.
+   Overall ract has gained popularity due to its simplicity, reusability, and perfromance optimiZATIONS, making its a go-to choise for many web developers when building modern user interfaces.
+ Advantages :
+  1> Code With MultiPle Purposes
+  2> Faster rendering
+  3> Stable Code Structure
+  4> SEO Friendliness 
+  5> Easy to Learn, Easy to Use.
+
+Q. What is Node JS 
+=> As an Asynchronous event-driven JAvascript runtime node js is designed to build scalable network application in the following "hello word" many connection can be handle concurrently. upon each connection the callback is fired but if there is no work to be done , node.js will sleep.
