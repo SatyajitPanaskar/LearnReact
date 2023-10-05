@@ -4,7 +4,7 @@ Q. What is React?
 - At its core, react follows componet-based architecture , where the interface is divided into reusable components. each component manages its own state and can be composed together to build complex uls. react utlizes a virtual DOM(Document object model) to efficently update and render the UI components.
 - Some Key features and concepts of react include :
  1> Components : react allows devlopers to create reausable UI components, which encapsulate their own logic and state. these components can be composed together to build complex interfaces.
- 2> JSx:JSX(javaScript xml) is an extension to javscript used in react . it enables developers to write HTML-like syntax within Javascript, making it easier to describe and render componets.
+ 2> JSx:JSX(javaScript xml) is an extension to javscript used in react. it enables developers to write HTML-like syntax within Javascript, making it easier to describe and render componets.
  3> Virtual DOM : React uses a virtual representation of the DOM, which is a lightweight copy of the actual HTML DOM. this virtual DOM allows react to efficently upadate and render only the necessary components when the application state changes.
  4> Unidirectional Data flow : React follows a unidirectional data flow also known as one-way binding.it means that data in react application flows in a single direction, from parent components child components. this helps to maintain a predictable state and makes it easire to debug and understand the application.
  5>React Hooks : introduced in react 16.8 hooks are functions that allow developers to use state and other react features in functional components instead of relying on class components. hooks provide a simpler and more concise way of managing state and lifecylce events.
@@ -21,3 +21,172 @@ Q. What is React?
 
 Q. What is Node JS 
 => As an Asynchronous event-driven JAvascript runtime node js is designed to build scalable network application in the following "hello word" many connection can be handle concurrently. upon each connection the callback is fired but if there is no work to be done , node.js will sleep.
+
+Q. What is Components.
+=> A Component is one of the core building of react. in other words, we can say that every application you will developed in react will be made up of pieces called components. Components make the task of building uls much easier. you can see a UI broken down into multiple individual pieces called components and work on them independetnly and merge them all in a parent component which will be your final UI.
+Type Of Components?
+1> Functional Components
+2> Class Components
+3> Pure Components
+4> Higher-Order Components
+5> Controlled Components
+6> Uncontroll Components
+Q. What is Functional Components?
+=> React js Functional Components are same of thr common components that will come across while working is react. these are simply javascript functions. we can create a fumctional components in react by writing a javascript  function. these function may or may not receive data as parameters. in the functional components, the return value is the jsx code to render to the Dom tree.
+Q. Whar is Class Components?
+=> React class based components are the  bread and butter of most modern web apps built in reactJS. these components are simple classes( made up of multiple functions that add functionality to the application). all class based components are child classes for the components class of react.
+=> the main feature of class- based components that distinguished them from functional components is that they have to a state which dictates the current behavior and appearance of the components( Later. with react Hooks introduced in version 16.8, we are able to declare a stateful components without declaring a class). this state can be modified by calling the setState() function. one or more variables, arrays or object define as part of the state can be modified at a time with the setState() function.
+
+Q. What is JSX?
+=> As we have already seen that all of the react components have a render function. the render function specifies the Html output of a react components. JSX(JAvaScript Extension), is a react extension which allows writing javscript code  that looks like html. in other words. JSX is an html-like syntax used by react that extends ECMAScript so that HTML-like syntax can co-exit with javscript /react code. the syntax is used by preprocessors (i.e transpilers like babel) to transform HTML-like  syntax into standard javascript object engine will parse.
+=> JSX provides you to write HTML/XML like structures(e.g DOM like Tree Structures) in the same file where you write javascript code, then preprocessor will transform these expressions into actual javaScript code. just like XML/HTML,JSX tags have a tag name attributes and children.
+
+---*** Part 9> Click Event and Function --------
+Q. What is event handlers in React?
+=>Event handlers determine what action is to be taken whenever an event is fired. this could be a button click or a change in a text input.
+=> Essentially , event handlers are what make it possible for users to interact with you react app. handling events with react elements is similar to handling event on DOM element with a few minor exceptions.
+=> if you're familiar with how events work in standard HTML and javascript , it should be easy for you to learn how to handle event in react.
+
+Q. What are onClick handlers in react?
+=> The react onClick event handlers enables you to call a function and trigger an action when a uers clicks an element ,such as a button in your app. 
+-> Event names are written in camelCase so the onClick evenet is written as onClick ina react app. in additon, react event handlers appear inside curly braces.
+--Example  in HTML 
+<button onclick="hello()"> hello </button>
+--Example in React 
+<button onClick={hello()}> hello </button>
+
+----- Part 10> State Function in react ------
+Q. state in React ?
+=> the state is ab updatable structure that is used to contain data or information about the components. the state in a components can changes over time. the changes in state over time can happen as reponses to user action or system event. a components with the state is know as stateful components and how it will render. they are also responsible for making a components dynamic and interactive.
+-> A state must be kept as simple as possible, it can be set by using the setState() method and calling setState() method triggers UI updates. A state represent the components local state or information.it can only be accessed or modified inside the components or by the component directly. to set an initial state before any interaction occurs we need to use the getInitialState() method.
+
+------ part 11> State class components -----
+------ part 12> props with functional/class components -----
+Q> Props in React ?
+=> Props stand for properties. they are read-only components. it is an object which stores the value of attributes of a tag and work similar to the HTML attributes. it gives a way to pass data from one components to other components . it is similar to function argument. props are passed to the components in the same way as argument passed in a function.
+->props are immutable so we cannot modify the props from inside the components inside the component. we can add attributes called props. these attributes are available in the components as this.props and can be used to render method.
+------ Part 14> #14: React Get Input Box Values ---------
+Q.What is Get Input Box Value in React?
+=> The OnChange Event Handle is a prop that you can pass into JSX<input> element. this prop is Provided by React so that your appliaction can listen to user input in real-time. when an onChange even occurs, the prop will call the function you passed as its parameter.
+example:
+ function handleChange(event){log(event.target.value);}
+ <input onChange={handleChange}/>
+
+------ Part 15>  #15: React Hide Show & Toggle  ---------
+------ Part 16>  16: React Form Handling  ---------
+Q> Form Handling in React?
+=> forms play an essential role in modern web application. They enable users to share information, complete task and provide feedback.
+-> without forms, many of the task that we take for granted on the web, such as logging in signing up, or making purchases, would not be possible.
+-> handling forms in react involes capturing user input, managing form state, and performing action based on the form data, lets take a look at an example of form handling in react.
+
+------ Part 17> #17: React Conditional Rendering ---------
+Q> Conditional Rendering in react ?
+=> conditional rendering react.js allows you to show or hide components based on certain constions. it is a powerful that helps you create dynamic and interactive user interfaces.
+
+------ Part 18> #18: React Form Validation  ---------
+Q> Form Validation in React 
+=> Form Validation in react.js refers to the process of validating user input within a form to ensure that it meets certeria or constraints before it is submitted. it helps in preventing user from submitting incorrect or incomplete data provides a better user experience by giving feedback on the input error.
+
+------ Part 19> #19: React Pass Function as Props  ---------
+
+Q> What is Pass Function as props in React?
+=> in react, you can pass function as props to child components. This allows you to communicate and share functionality between different part of your application.
+
+------ Part 20> #20:  React Life Cycle Method  --------
+
+Q> What is Life Cycle Method in react?
+=>in Reacjs a life cycle method refers to a set of function that are invoked at various stages of a component life cycle. these method allow you to perfrom specific tasks or execute code at different points during the components existence.
+-> in previous version of react there were serveral life cycle method available, but with the introduction of react 16.3 and later, some of these method have been deprecated in favor of a new set of methods based on the concept of "react Hooks." Hover, the older life cycle methods are still supported and can be used in existing codebases.
+
+there are 3 phase 1.Mounting 2.Updating 3.Unmounting
+1> Mounting Phase ---> 
+      -> Constructor(): This method is called when a component is being initialized and constructed. it is
+         typically used for initializing state and binding  event handlers.           
+      -> Static getDerivedStateFromProps(): This method is invoked before rendering both on the initial mount
+         and on subsequent updates. it allows you to update the state based on change in props.
+      -> render(): this method is responsible for rendering the components JSX markup.
+      -> componentDidMount(): This method is called immediately after the component has been mounted to the 
+         DOM. it is commonly used to initiate API calls or set up event Listeners.
+2> Updating Phase ---> 
+      -> static getDerivedStateFormProps(): As mentioned eariler, this method is aslo called during the   
+         updating phase when new peops are received.
+      -> shouldComponentUpdate(): This method determines whether the component should re-render or not. it can
+         be used to optimize perfromance by avoiding unnecessary re-renders.
+      -> render(): the render method is called again to update the components UI.
+      -> getSnapshotBeforeUpdate(): this method is called right changes are committed to the DOM. it allows you
+         to capture information from the DOM before it is potentially changed.
+      -> componentDidUpadate(): this method is invoked after the component has been re-rendered and the changes
+         have been applied to the DOM. it is often used for side effect, such as updating the DOM based on prop
+         or state changes.    
+ 3> Unmounting+ Phase ---> 
+      -> componentWillUnmount(): This method is called right before the component is removed from the DOM. it
+         can be used to perform cleanup task like removing event listeners or canceling API request.
+
+Q> When it calls the lifecycle method in react:
+   1> When Component is loaded.
+   2> When component is Update with state and props.
+   3> when component is removed.
+
+Q> #21: React Constructor Lifecycle Methods?
+ => in react the constructor method is part of the components life cycle and is invoked during the mounting phase. the constructor is a special method that gets called when an instance of a component is created.
+
+---> Purpose 
+     1> The constructor method is primarily used for initalizing the components state and binding event handles.
+     2> it is aslo used to set up the initial values or state based on the components props 
+     3> the constructor is called before the component is mounted to the DOM.
+
+---> Syntax
+        1> in a class-based component, the constructor method is defined within th component class.
+        2> the constructor takes a props parameter, which is optional. it should be passed to the super() methos to call the constructor of the parent class(usually component).
+        3> the state can be initialized within the constructor by assigning an object to this.state
+
+Q> #22: React Render Lifecycle Methods ---
+=> in react render is the technique that can redirect a page with the help of function render(). most imoprtantly, render a function we can use to define the HTML code whithin the html element. it helps to display certain view in the UI using certain logic define in the render function and returns the output.
+
+---> Purpose ---
+      1> React renders HTML to the web page by using a function called render().
+      2> The purpose of the function is to display the specified HTML code inside the specified HTMl element.
+      3> in the render() method we can read props and state and return our JSx code to the root component of
+         our app.
+      4> In the render() method, we cannot change the state, and we cannot cause side effects ( such as making an HTTP request to the webserver).
+
+Q> #23: React ComponentDidMount Lifecycle Methods 
+=> In React, the componentDidMount method is a life cycle method that is invoked immediately after a component has been mounted to the DOM. It is a good place to perform initializations, side effects, or interact with external APIs. 
+---> Purpose:
+Making API calls to fetch data from a server.
+Setting up event listeners or subscriptions.
+Manipulating the DOM or interacting with external libraries.
+Performing additional initialization or setup tasks.
+
+Q> #24: React ComponentDidUpdate Lifecycle Method 
+=>In React, The componentDidUpdate() method allows us to execute the React code when the component is updated. All the network requests that are to be made when the props passed to the component changes are coded here.
+---> Purpose:
+Handle side effects and perform additional operations after a component update.
+Respond to changes in props or state.
+Update the DOM or interact with external libraries after a component update.
+Perform asynchronous operations based on prop or state changes.
+Optimize performance by avoiding unnecessary updates or expensive calculations.
+
+Q> #25: React ShouldComponentUpdate Lifecycle Method 
+=>In React, shouldComponentUpdate is a lifecycle method available in class components. Its purpose is to optimize rendering performance by allowing you to control when a component should update and re-render. 
+-> by default, when a components state or props change, react re-render that component to reflect the change. However, re-rendering can be an expensive operation, especially for complex components or components trees. in some case, re-rendering may be unncessary if the ner state or props do not affect the component's output. this is where shouldComponentUpdate become valuable.
+---> Purpose:
+Your implementation of shouldComponentUpdate should return a boolean value.
+If it returns true, the component will re-render as usual..
+If it returns false, the component will not re-render, even if the props or state have changed.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
