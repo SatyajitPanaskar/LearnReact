@@ -18,6 +18,13 @@ import ReactConstructorLifecycleMethods from './20.ReactLifeCycleMethod/21.React
 import ReactComponentDidMountLifecycleMethods from './20.ReactLifeCycleMethod/23.ReactComponentDidMountLifecycleMethods/23.ReactComponentDidMountLifecycleMethods';
 import ReactComponentDidUpdateLifecycleMethod from './20.ReactLifeCycleMethod/24.ReactComponentDidUpdateLifecycleMethod/24.ReactComponentDidUpdateLifecycleMethod';
 import ReactShouldComponentUpdateLifecycleMethod from './20.ReactLifeCycleMethod/25.ReactShouldComponentUpdateLifecycleMethod/25.ReactShouldComponentUpdateLifecycleMethod';
+import ReactComponentWillUnmountLifecycleMethod from './20.ReactLifeCycleMethod/26.ReactComponentWillUnmountLifecycleMethod/26.ReactComponentWillUnmountLifecycleMethod';
+import ReactuseEffectHook from './20.ReactLifeCycleMethod/28.ReactuseEffectHook/28.ReactuseEffectHook';
+import StyleForReactComponents from './30.StyleForReactComponents/30.StyleForReactComponents';
+import BootstrapInstallInReact from './31.BootstrapInstallInReact/31.BootstrapInstallInReact';
+import ReactArrayMapMethod from './32.ReactArrayMapMethod/32.ReactArrayMapMethod';
+import ReactNestedMapFunction from './32.ReactArrayMapMethod/34.ReactNestedMapFunction';
+
 
 function App() {
   // const userData = [
@@ -31,7 +38,7 @@ function App() {
       <h2>
         React Learn
       </h2>
-      {/* {/* <Users />
+      {/* <Users />
       <ClassComp />
     <ClickEvenetFunction/>
      <StateFunction/>       
@@ -58,7 +65,14 @@ function App() {
       <ReactConstructorLifecycleMethods/>
       <ReactComponentDidMountLifecycleMethods/>
       <ReactComponentDidUpdateLifecycleMethod/>
-      <ReactShouldComponentUpdateLifecycleMethod/>*/}
+      <ReactShouldComponentUpdateLifecycleMethod/>
+      <ReactComponentWillUnmountLifecycleMethod/>
+      <ReactuseEffectHook/>
+      <StyleForReactComponents/>
+     
+    <ReactArrayMapMethod />
+       <BootstrapInstallInReact/>*/}
+      <ReactNestedMapFunction/>
     </div>
   );
 }

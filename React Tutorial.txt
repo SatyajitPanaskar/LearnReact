@@ -175,6 +175,122 @@ Your implementation of shouldComponentUpdate should return a boolean value.
 If it returns true, the component will re-render as usual..
 If it returns false, the component will not re-render, even if the props or state have changed.
 
+Q> #26: React ComponentWillUnmount Lifecycle Method?
+=> In React, componentWillUnmount was a lifecycle method used in class components. However, it is important to note that as of React 17.0.0, this method has been deprecated and is no longer recommended for use. React introduced the "unmounting" phase where components are removed from the DOM, and componentWillUnmount used to be a part of this phase.
+-> The ComponentWillUnmount method was invoked righ before a component was removed from the DOM and destroyed. it provides an opporunity to perform any necessary cleanup task, such as cancelling timers, cleaning subscriptions or releasing resource to avoid memory leaks.
+
+--> Purpose: 
+It is called just before a component is removed from the DOM and destroyed.
+Its primary purpose was to avoid memory leaks by cleaning up resources associated with the component.
+With the introduction of React Hooks and the useEffect hook, cleanup tasks can be handled more easily and efficiently in functional components.
+
+------ Part 27>  #27: React Hooks Lifecycle Method   --------
+Q> What is Hooks?
+=>In React, "hooks" are functions that allow you to use state and other React features in functional components, which were traditionally stateless. Hooks were introduced in React version 16.8 to provide a more elegant and reusable way to manage state and lifecycle behaviors in functional components.
+-> Before Hooks react components were mainly created using class components, which allowd the use of lifecycle method and state/ However class components can become cumbersome and harder to maintain as the component logic grows. hooks provide an altrnative way to write components in a more concise and readable manner.
+
+List of Hooks
+1). Basic Hooks
+useState
+useEffect
+useContext
+2). Additional Hooks
+useReducer
+useCallback
+useMemo
+useRef
+useImperativeHandle
+useLayoutEffect
+useDebugValue
+useDeferredValue
+useTransition
+useId
+3). Library Hooks
+useSyncExternalStore
+useInsertionEffect
+
+--------#28: React useEffect Hook -------
+Q> What is useEffect Hooks ?
+=>In the context of React.js, useEffect is a built-in hook that allows you to perform side effects in functional components. Side effects typically involve tasks that should be executed after the component has rendered, such as fetching data from an API, subscribing to event listeners, or updating the document title. It is analogous to lifecycle methods like componentDidMount, componentDidUpdate, and componentWillUnmount in class components.
+-> In React, the useEffect hook is used for handling side effects in functional components. It allows you to perform certain actions when the component mounts, updates, or unmounts. The useEffect hook takes two arguments: a function containing the side effect logic and an optional array of dependencies.
+
+#29: React useEffect With Conditional
+
+--------#30:  #30: React Style Methods -------
+Q> Style for React components?
+ React is a JavaScript library for building user interfaces. React makes it painless to create interactive UIs. Design simple views for each state in your application, and React will efficiently update and render just the right components when your data changes.
+-->There are different ways to styling React JS Components :
+Inline CSS
+Normal CSS
+CSS in JS
+CSS module
+Sass & SCSS - sass react pkg -> npm install sass
+Styled Components (External Package)
+
+ --------#31:  #31: Bootstrap Install In React ------ 
+Q> What is Bootstrap ?
+=>Bootstrap is a popular and widely-used open-source front-end framework for building responsive and mobile-first websites and web applications. It was originally developed by Twitter and was released in August 2011. The primary goal of Bootstrap is to simplify the web development process by providing a collection of pre-designed, reusable components and styles that can be easily customized and adapted to create modern and visually appealing user interfaces.
+
+->Key features of Bootstrap include :
+1>Responsive Layouts -> Bootstarp's grid system allows developers to create responsive layouts that automatically adjust and adapt to different screen sizes, making website look great on various devices like dekstops, tablets, and smartphones.
+2>CSS Components -> Bootstrap comes with a wide range of css-based components such as button, forms navigation bars,dropdowns, modals, cards, and more, which can be easily integrated into web pages.
+3>JavaScript Components -> Bootstarp includes javascript components like carsousels tooltips, popovers, modals and scrollspy, which enhance the user exprience and add interactive element to the website.
+4>Customization ->  while Bootstrap offers a set of set default style and componets, it also allows devlopers to cutomize the framework the selecting specific components and modifying the them to match the desired design.
+5>Browser Compatibility -> Bootstrap is designed to work well with most modern web browser,ensuring a consistent exprience for user across  different platfroms.
+6>Community Support -> being open-source, Bootstrap has a large and active community of devlopers who contribute to the project, offers support, and create third-party extension, themes, and templates.
+
+=> using Bootstrap can signficantly spped up the development process, especially for projects that required a responsive design. by leveraging the pre-built components and responsive layout system. developers can focus more on the application functionalitya and less on the intricate details of css and cross-browser compatibility. Bootstrap is often used in conjunction with popular front-end javascript libraries or frameworks like react.angular, or vue.js to build more sophisticated single-page application(spas) and dynamic user interfaces.
+
+--------#33: #33: React Bootstrap Table ------
+Q> What is Bootstrap Table?
+=>Bootstrap 5 is the latest version of the popular front-end framework Bootstrap. It is an open-source toolkit used to build responsive, mobile-first web applications and websites. One of the fundamental components provided by Bootstrap is the Table.
+->a Bootstrap 5 table is an enhanced version of the HTML table element that comes with predefined styles and interactive features. It allows you to display tabular data in a structured and visually appealing format. Bootstrap tables are designed to be responsive and work seamlessly across various devices, making them ideal for modern web development.
+--------#32:  #32: React Array Map Method -------
+Q> What is Array
+=>An array is a fundamental data structure in computer programming that represents a collection of elements stored in a contiguous block of memory. These elements can be of the same or different data types, such as numbers, strings, objects, or even other arrays. Arrays are commonly used to organize and manipulate a group of related values.
+->in most progrmming language, includes, javascript(used in react.js) arrays are zero-indexed, which means the first element is accessed with an index of 0, the second element with an index of 1, and so on.
+
+Q>What is array with map?
+=>Arrays offer various methods and properties to manipulate and work with the data they store, such as map(), filter(), reduce(), length, etc. These methods allow developers to perform operations on the array elements easily and efficiently.
+-> using map() over a traditional for loop in react.js has serval advantages. the map() function provides a more concise and expressive way to perform tranformations on arrays and is often preferred for rendering lists of element. here are some reasons why using map() is common in reactjs.
+1> Declarative approach : map() is higer-order function which means it follows a declarative programming paradigm. instead of explicitly defining the iteration steps, you only describe what you to achieve. this makes the code easier to read and understand.
+2> immutable operation: react encouranges immutable data handling, and map() inherently creates a new array with the transformed element, leaving the original array unchanged. this is useful for avoiding side effect and marking the applications more predictable.
+3> No need to manages index : when using map(), you don't have to manually manage the array index(as you would in a for loop) when rendering element in react . the key prop automatically takes care of uniquely identifying each rendered component in the list.
+4> Cleaner Code : using map() can result in more consise and cleaner code. it reduces boilerplate and increases code readability.
+
+--------#34:  #34: React Nested Map Function -------
+Q>React Nested Map Function ?
+=> In ReactJS, a nested map function refers to using the map function inside another map function. This approach is commonly used to handle data that has multiple levels of nesting, such as an array of arrays or an array of objects that contain arrays. When you encounter nested data structures in React, you can use nested map functions to iterate through the data at each level and render the corresponding UI components.
+
+--------#35:  #35: React Reusable Components -------
+Q> What is  Reusable Components ?
+=> In ReactJS, "reusable components" refer to components that are designed and implemented in a way that allows them to be used multiple times throughout an application or across different projects. These components are modular and self-contained, meaning they encapsulate their functionality, appearance, and behavior in a single package. By creating reusable components, developers can efficiently build complex user interfaces while promoting code maintainability and reusability.
+
+Benefits of Reusable Components in React,
+1>Code Reusability
+=> Reusable components can be used in different parts of an application or across multiple project, reducing redundant code and saving development time.
+2>Consistency
+=> when using the same component throughout an application, it ensure a consistent look and behaviour, enhancing the user exprience.
+3>Modularity
+=> reusable components are self-contained,which menas they can be easily moved,update or replaced without affecting other parts of the application. 
+4>Maintainability
+=> since components have a focused and isolated scope, they are easier to maintain,debug and rafactor.
+5>Abstraction
+=>Developers can abstract complex functionality into simple reusable components making the codebase more manageable and easier to understand.
+
+--------#36: #36: React Fragment  ------- 
+Q> What is Fragment
+=> In React, a "fragment" is a feature that allows you to group multiple elements together without introducing an additional wrapping element in the DOM. Fragments are used to return multiple elements from a component's render method without adding unnecessary markup to the resulting HTML Before fragments were introduced in React, developers often had to wrap multiple elements in a single container element, even if that container element didn't serve any semantic purpose other than to group those elements together.
+
+--------#37: #37: React Lifting State Up  -------
+Q> What is Lifting State Up?
+=>In React, "lifting state up" is a design pattern used to manage shared state among multiple components by moving the state from a lower-level component to a higher-level component in the component tree. This pattern is especially useful when two or more components need to share the same state or when a child component needs to update the state of its parent or another sibling component.
+
+-> Here's how lifting state up works in React:
+1>Identify the shared state :
+2>Move the state up :
+3>Pass the state down as props :
+4>Modify the state through callbacks :
 
 
 
