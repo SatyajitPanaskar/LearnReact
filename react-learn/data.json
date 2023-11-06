@@ -1,0 +1,31 @@
+{
+  "employee": [
+    {
+      "empno": "1111",
+      "ename": "Dipak Chavan ",
+      "job": "Frontend Devloper",
+      "salary": "60,000",
+      "deptno": "10",
+      "active": true,
+      "id": 1
+    },
+    {
+      "empno": "1112",
+      "ename": "Parth Kholapur",
+      "job": "Back-end Devloper",
+      "salary": "500000",
+      "deptno": "10",
+      "active": true,
+      "id": 2
+    },
+    {
+      "empno": "1113",
+      "ename": "Pravin Bankar",
+      "job": "Clerk",
+      "salary": "70000",
+      "deptno": "20",
+      "active": true,
+      "id": 3
+    }
+  ]
+}

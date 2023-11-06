@@ -1,29 +1,49 @@
 React Tutorial
 Q. What is React?
-=> React js also know as react , is a popular javascript library for building user interfaces. it was devloped by facebook and open sourced in 2013, react is widely used for creating interactive and dynamic web applications.
-- At its core, react follows componet-based architecture , where the interface is divided into reusable components. each component manages its own state and can be composed together to build complex uls. react utlizes a virtual DOM(Document object model) to efficently update and render the UI components.
-- Some Key features and concepts of react include :
- 1> Components : react allows devlopers to create reausable UI components, which encapsulate their own logic and state. these components can be composed together to build complex interfaces.
- 2> JSx:JSX(javaScript xml) is an extension to javscript used in react. it enables developers to write HTML-like syntax within Javascript, making it easier to describe and render componets.
- 3> Virtual DOM : React uses a virtual representation of the DOM, which is a lightweight copy of the actual HTML DOM. this virtual DOM allows react to efficently upadate and render only the necessary components when the application state changes.
- 4> Unidirectional Data flow : React follows a unidirectional data flow also known as one-way binding.it means that data in react application flows in a single direction, from parent components child components. this helps to maintain a predictable state and makes it easire to debug and understand the application.
- 5>React Hooks : introduced in react 16.8 hooks are functions that allow developers to use state and other react features in functional components instead of relying on class components. hooks provide a simpler and more concise way of managing state and lifecylce events.
-  6> React Native : React has a sibling framework called react native, which is used for building native mobile application. it allows developers to write mobile apps using react components-based approach, and the code can be reused across different platfroms like IOS and Android.
+=> Reactis a most popular Open-source, component-based, front-end javascript library in the field of web development. it was developed by Facebook in 2013, react is widely used for creating interactive and dynamic web applications.
+- react follows component-based architecture, where the interface is divided into reusable components. react utilises a virtual DOM(Document object model) to efficiently update and render the UI components.
+
+Q> Why Reactjs?
+=> React's popularity today has eclipsed that of all other front-end developer frameworks.
+  1> easy creation of dynamic application.
+  2> Reusable components
+  3> Unidirectional data flow 
+  4> Small learning curve
+  5> Dedicated tools for easy debugging 
+  6> simplicity
+
+Q>Some Key features and concepts of reacting include :
+
+ 1> Components: react allows developers to create reusable UI components, which encapsulate their logic and state. these components can be composed together to build complex interfaces.
+
+ 2> JSx: JSX(JavaScript XML) is an extension to JavaScript used in React. it enables developers to write HTML-like syntax within Javascript, making it easier to describe and render components.
+
+ 3> Virtual DOM: React uses a virtual representation of the DOM, which is a lightweight copy of the actual HTML DOM. This virtual DOM allows React to efficiently update and render only the necessary components when the application state changes.
+
+ 4> Unidirectional Data flow: React follows a unidirectional data flow also known as one-way binding. It means that data in the React application flows in a single direction, from parent components to child components. this helps to maintain a predictable state and makes it easier to debug and understand the application.
+
+ 5>React Hooks: introduced in React 16.8 hooks are functions that allow developers to use state and other react features in functional components instead of relying on class components. hooks provide a simpler and more concise way of managing state and life events.
+
+  6> React Native: React has a sibling framework called react native, which is used for building native mobile applications. it allows developers to write mobile apps using a react components-based approach, and the code can be reused across different platforms like IOS and Android.
 --Note 
-   React has a vast ecosystem of libraries and tools that complement its capabilities. it is often used in combination with other technologies such as redux for state management, react router for routing and axios for api request.
-   Overall ract has gained popularity due to its simplicity, reusability, and perfromance optimiZATIONS, making its a go-to choise for many web developers when building modern user interfaces.
+   React has a vast ecosystem of libraries and tools that complement its capabilities. it is often used in combination with other technologies such as redux for state management, react-router for routing and Axios for API requests.
+   Overall ract has gained popularity due to its simplicity, reusability, and performance optimisations, making it a go-to choice for many web developers when building modern user interfaces.
  Advantages :
-  1> Code With MultiPle Purposes
-  2> Faster rendering
+  1> Reusable component
+  2> Large and active community
   3> Stable Code Structure
-  4> SEO Friendliness 
+  4> Creating dynamic web applications becomes easier 
   5> Easy to Learn, Easy to Use.
+  6> Performance enhancement
+  7> Scope for testing the code
 
 Q. What is Node JS 
-=> As an Asynchronous event-driven JAvascript runtime node js is designed to build scalable network application in the following "hello word" many connection can be handle concurrently. upon each connection the callback is fired but if there is no work to be done , node.js will sleep.
+=> As an Asynchronous event-driven Javascript runtime node js is designed to build scalable network applications in the following "hello word" many connections can be handled concurrently. upon each connection, the callback is fired but if there is no work to be done, node.js will sleep.
 
-Q. What is Components.
-=> A Component is one of the core building of react. in other words, we can say that every application you will developed in react will be made up of pieces called components. Components make the task of building uls much easier. you can see a UI broken down into multiple individual pieces called components and work on them independetnly and merge them all in a parent component which will be your final UI.
+Q. What are Components?
+=> A Component is one of the core buildings of react. in other words, we can say that every application you will develop in React will be made up of pieces called components. Components make the task of building ULs much easier. you can see a UI broken down into multiple individual pieces called components and work on them independently and merge them all in a parent component which will be your final UI. 
+A React component is a reusable and self-contained module that represents a part of the user interface. It can be a function component or a class component. Components encapsulate logic and UI, making it easier to develop and maintain complex
+applications
 Type Of Components?
 1> Functional Components
 2> Class Components
@@ -31,25 +51,26 @@ Type Of Components?
 4> Higher-Order Components
 5> Controlled Components
 6> Uncontroll Components
-Q. What is Functional Components?
-=> React js Functional Components are same of thr common components that will come across while working is react. these are simply javascript functions. we can create a fumctional components in react by writing a javascript  function. these function may or may not receive data as parameters. in the functional components, the return value is the jsx code to render to the Dom tree.
-Q. Whar is Class Components?
-=> React class based components are the  bread and butter of most modern web apps built in reactJS. these components are simple classes( made up of multiple functions that add functionality to the application). all class based components are child classes for the components class of react.
-=> the main feature of class- based components that distinguished them from functional components is that they have to a state which dictates the current behavior and appearance of the components( Later. with react Hooks introduced in version 16.8, we are able to declare a stateful components without declaring a class). this state can be modified by calling the setState() function. one or more variables, arrays or object define as part of the state can be modified at a time with the setState() function.
+
+Q. What are Functional Components?
+=> React js Functional Components are the same as the common components that will come across while working in React. these are simply javascript functions. we can create functional components in React by writing a javascript function. these functions may or may not receive data as parameters. In the functional components, the return value is the js code to render to the Dom tree.
+Q. What are Class Components?
+=> React class-based components are the bread and butter of most modern web apps built in reactJS. these components are simple classes( made up of multiple functions that add functionality to the application). all class-based components are child classes for the component's class of react.
+=> The main feature of class-based components that distinguishes them from functional components is that they have a state that dictates the current behaviour and appearance of the components( Later. with react Hooks introduced in version 16.8, we can declare stateful components without declaring a class). this state can be modified by calling the setState() function. One or more variables, arrays or objects defined as part of the state can be modified at a time with the setState() function.
 
 Q. What is JSX?
-=> As we have already seen that all of the react components have a render function. the render function specifies the Html output of a react components. JSX(JAvaScript Extension), is a react extension which allows writing javscript code  that looks like html. in other words. JSX is an html-like syntax used by react that extends ECMAScript so that HTML-like syntax can co-exit with javscript /react code. the syntax is used by preprocessors (i.e transpilers like babel) to transform HTML-like  syntax into standard javascript object engine will parse.
-=> JSX provides you to write HTML/XML like structures(e.g DOM like Tree Structures) in the same file where you write javascript code, then preprocessor will transform these expressions into actual javaScript code. just like XML/HTML,JSX tags have a tag name attributes and children.
+=> As we have already seen all of the react components have a render function. the render function specifies the HTML output of a react component. JSX(JAvaScript Extension), is a react extension that allows writing javascript code that looks like HTML. In other words. JSX is an HTML-like syntax used by React that extends ECMAScript so that HTML-like syntax can co-exist with JavaScript/react code. the syntax is used by preprocessors (i.e. transpilers like Babel) to transform HTML-like syntax into standard javascript object engine will parse.
+=> JSX allows you to write HTML/XML-like structures(e.g. DOM like Tree Structures) in the same file where you write javascript code, and then the preprocessor will transform these expressions into actual JavaScript code. just like XML/HTML, JSX tags have tag name attributes and children.
 
 ---*** Part 9> Click Event and Function --------
-Q. What is event handlers in React?
+Q. What are event handlers in React?
 =>Event handlers determine what action is to be taken whenever an event is fired. this could be a button click or a change in a text input.
-=> Essentially , event handlers are what make it possible for users to interact with you react app. handling events with react elements is similar to handling event on DOM element with a few minor exceptions.
-=> if you're familiar with how events work in standard HTML and javascript , it should be easy for you to learn how to handle event in react.
+=> Essentially, event handlers are what make it possible for users to interact with your react app. Handling events with react elements is similar to handling events on DOM elements with a few minor exceptions.
+=> If you're familiar with how events work in standard HTML and JavaScript, it should be easy for you to learn how to handle events in React.
 
 Q. What are onClick handlers in react?
-=> The react onClick event handlers enables you to call a function and trigger an action when a uers clicks an element ,such as a button in your app. 
--> Event names are written in camelCase so the onClick evenet is written as onClick ina react app. in additon, react event handlers appear inside curly braces.
+=> The react onClick event handlers enable you to call a function and trigger an action when a user clicks an element, such as a button in your app. 
+-> Event names are written in camelCase so the onClick event is written as onClick in the react app. In addition, react event handlers appear inside curly braces.
 --Example  in HTML 
 <button onclick="hello()"> hello </button>
 --Example in React 
@@ -65,6 +86,7 @@ Q. state in React ?
 Q> Props in React ?
 => Props stand for properties. they are read-only components. it is an object which stores the value of attributes of a tag and work similar to the HTML attributes. it gives a way to pass data from one components to other components . it is similar to function argument. props are passed to the components in the same way as argument passed in a function.
 ->props are immutable so we cannot modify the props from inside the components inside the component. we can add attributes called props. these attributes are available in the components as this.props and can be used to render method.
+
 ------ Part 14> #14: React Get Input Box Values ---------
 Q.What is Get Input Box Value in React?
 => The OnChange Event Handle is a prop that you can pass into JSX<input> element. this prop is Provided by React so that your appliaction can listen to user input in real-time. when an onChange even occurs, the prop will call the function you passed as its parameter.
@@ -279,18 +301,412 @@ Benefits of Reusable Components in React,
 =>Developers can abstract complex functionality into simple reusable components making the codebase more manageable and easier to understand.
 
 --------#36: #36: React Fragment  ------- 
+
 Q> What is Fragment
 => In React, a "fragment" is a feature that allows you to group multiple elements together without introducing an additional wrapping element in the DOM. Fragments are used to return multiple elements from a component's render method without adding unnecessary markup to the resulting HTML Before fragments were introduced in React, developers often had to wrap multiple elements in a single container element, even if that container element didn't serve any semantic purpose other than to group those elements together.
 
 --------#37: #37: React Lifting State Up  -------
+
 Q> What is Lifting State Up?
-=>In React, "lifting state up" is a design pattern used to manage shared state among multiple components by moving the state from a lower-level component to a higher-level component in the component tree. This pattern is especially useful when two or more components need to share the same state or when a child component needs to update the state of its parent or another sibling component.
+=>In React, "lifting state up" is a design pattern used to manage shared state among multiple components by moving the state from a lower-level(child) component to a higher-level(parent) component in the component tree. This pattern is especially useful when two or more components need to share the same state or when a child component needs to update the state of its parent or another sibling component.
 
 -> Here's how lifting state up works in React:
-1>Identify the shared state :
-2>Move the state up :
-3>Pass the state down as props :
-4>Modify the state through callbacks :
+1>Identify the shared state : when you have two or more components that need access to the same state or need to synchronize  their data, you can identify the common state that needs to be lifted up.
+
+2>Move the state up : instead of keeping the state in one of the child components, you move it to the parent components that is an ancestor to all the components that require access to the state.This parent component now becomes the single source of truth for thr shared state.
+
+3>Pass the state down as props : After moving the state to the parent component, you pass it down to the child components as props. this allows child components read and use the state as need.
+
+4>Modify the state through callbacks : To update the state from child components you pass down callback function(aslo as props) from the parent. when a child components need to change the state, it calls the callback, and the parent component handles the state update. this way the parent component controls how the state is modified.
+
+--------#38: #38: React Pure Component  -------
+Q> What is Pure Component ?
+=>In React, a "Pure Component" is a specific type of component that is designed to optimize performance by minimizing unnecessary renders. In React, components are re-rendered whenever their state or props change. However, if a component's render output is solely determined by its props and state, and they have not changed, there is no need to re-render the component. This is where Pure Components come into play.
+->A Pure Component in React is a class component that extends the React.PureComponent class, or, since React 16.6, it can also be written as a functional component that utilizes the React.memo() higher-order component (HOC). The main characteristic of a Pure Component is that it automatically implements a shallow comparison of props and state to decide whether to re-render or not.
+
+--------#39: #39: React Memo  -------
+
+Q> what is Memo?
+=>  In React, Memo is a higher-order component (HOC) used to optimize functional components by preventing unnecessary re-renders. It's a performance optimization technique aimed at improving the efficiency of React applications. 
+->When a functional component is wrapped with React.memo, React will automatically memoize the component. Memoization means that React will store the rendered output of the component and only re-render it when the component's props have changed. If the props remain the same, React will reuse the previously rendered output, avoiding the need to recalculate or re-render the component.
+
+--------#40: 40.React useMemo Hook  -------
+
+Q> what is useMemo ?
+=>In React, The useMemo hook in React is used to memoize the result of a computation and optimize the performance of functional components. It's one of the built-in hooks that React provides to help us manage expensive calculations or data processing efficiently.
+->The basic purpose of useMemo is to cache the return value of a function and only recompute it when the dependencies specified in the second argument of the useMemo call change. This behavior prevents unnecessary recalculations and can significantly improve the performance of our components.
+
+--------#41: #41: React Ref  -------
+
+Q> What is Ref
+=> In React, "ref" is a special attribute that can be used to access or reference a DOM element or a React component instance. It provides a way to interact directly with DOM elements or components, enabling you to perform certain operations like focusing an input field, accessing the dimensions of an element, or triggering imperative animations.
+-> Remember, using refs should be done sparingly, and most interactions with the DOM can often be achieved using React's state and props mechanism, but there are specific use cases where refs prove to be useful.
+
+#42: React useRef Hook |
+Q> what is useRef Hook?
+=> In React, "useRef" is a Hook that allows you to create a mutable reference to an element or a value that persists across renders. It is commonly used for accessing and interacting with DOM elements, managing focus, and storing values that should not trigger a re-render when they change.
+
+-->The primary use cases for useRef are:
+
+1>Accessing DOM elements: You can use useRef to get a reference to a DOM element, like changing its style, adding event listeners, or triggering imperative functions.
+
+2>Storing mutable values: Since the ref object persists across renders, you can use it to store values that need to be accessed and updated without triggering re-renders. 
+
+3>Caching expensive calculations: If you have a computation that is costly in terms of performance and doesn't depend on the component's state or props, you can use useRef to store the result of the computation and reuse it across renders.
+
+--------#43: #43: React forwardRef Hook  -------
+
+Q> What is ForwardRef ?
+=> In React, forwardRef is a special function in React that allows you to forward a ref from a parent component to a child component. It is primarily used when you need to access the DOM element or component instance of the child component from its parent.
+
+-->The primary use cases for forwardRef are:
+ 1> Accessing DOM elements: If you need to focus, scroll, or perform other DOM-related operations on a child component, you can use forwardRef to get access to the child's DOM element.
+ 2> Exposing child component functions:  You might have some functions in the child component that you want to trigger from the parent component. Using forwardRef, the parent component can call those functions directly on the child component instance.
+
+--------#44: #44: React Controlled Component  -------
+
+Q>What is Controlled Components?
+=> In React, a controlled component is a component whose state is controlled entirely by the React component itself. The component's state is managed by React, and any changes to the component's state are done through React's setState() method. This allows React to have full control over the component's behavior and enables synchronization with the user interface.
+
+--> The primary use cases for Controlled Component are: 
+1>State Management: TheComponent state is stored within the component it self using the useState or this.state(for class Component) hookk. this state is used to determine the current value of the component.
+2>Props as Input : controlled components receive their current value as a prop from their parent component maintains the state, passing it down to the controlled component as a prop.
+3>Event Handling : Any changes to the component value (e.g user input) are captured through event handles such as onChange , onClick etc.
+4>Updating State : when an event occurs (e.g user typed in an input field) the event handler calles setState(or equivalent) to update the component state with the new value.
+5>Re-rendering : when the state is update the component is re-rendered with the new value and user interface reflects the latest state.
+6>Single Source of Truth : The Component's value is solely derived from its state so the state become the singles source of truth for the component value.
+
+--------#45:  #45: React Uncontrolled Component  -------
+
+Q> What is Uncontrolled Component ?
+=>  In React, an uncontrolled component is a component whose state is managed by the DOM rather than being controlled by React itself. Unlike controlled components, where React handles the state and updates, uncontrolled components rely on the underlying DOM to keep track of the component's state. This means that the state is not directly accessible through React's setState or useState mechanism.
+
+--> The primary use cases for Uncontrolled Component are: 
+1>No Explicit State : Uncontrolled components do not have an explicit state defined within the react component.
+2>Ref for Access : instead of using state, you typically use a ref to accsess the current value of the component. refs are a way to directly interact with the DOM element in react.
+3>DOM as Source of Truth : The component value is managed by the DOM itself. for example in an uncontrolled input component, the value is controlled by the value attribute of the input element.
+4>Event Handling : Event handlers are used to capture changes to the component's value similar to controlled component. evenets like onChange, onClick etc, are still utilized.
+5>No Re-renders : Since there is no state being update, change to the component's value won't trigger re-renders of the component. this can lead to potential inconsistencies between react virtual DOM and the actual DOM.
+
+--------#46:  #46: React Higher Order Component  -------
+Q> What is  Higher Order Component ?
+=> In React, a Higher Order Component (HOC) is a design pattern in React that involves wrapping a component with another function or component in order to enhance its behavior or provide additional props. This pattern is commonly used to reuse component logic, handle cross-cutting concerns, and make components more modular.
+
+-> The primary use cases for Higher Order Component are:  
+1>Reusable Logic : HOCs are a design pattern in react used to share and reuse component logic across multiple component.
+2>Function Wrapper : A HOC is a function that takes a component and return a new component with enhanced featured or behavior.
+3>Composition : HOC enable component composition by wrapping one component with another to argument its functionality.
+4>Cross-Cutting Concerns : they help manage cross-cutting concerns like state management, authentication, logging, and data fetching.
+5>Props Injection : HOC can inject additional props, state, or functions into the wrapped component.
+6>Modularity : by separating concerns, HOC make components more modular and focused on specific tasks.
+7>Code Reusability : common logic can be encapsulated in HOC reducing code duplication across component.
+8>Dynamic Behavior :
+
+--------#47: #47: React useCallback Hook  -------
+
+Q>What is useCallback Hook ?
+=>. In React, useCallback hook in React is used to optimize the performance of your components by memoizing functions, ensuring that they are not recreated on every render. 
+
+->  The primary use cases for useCallback are:  
+1>Function Memoization : useCallback memorizes(caches) a function, ensuring that the same function instance is return an subsequent renders as long as it  dependencies remain unchanged. this os particular useful to prevent unnecessary re-renders of child component that receive function as props.
+
+2>Dependencies Array : the second argument to use callback is an array of dependencies. if any of these dependencies change between renders, the memoized function will be recreated: otherwise, it will return the previously memoized function. make sure to list all variable that the function relies on.
+
+3>Use Case - Event Handlers : when passing event handlers to child component, using use callback prevents those handlers from being recreated on each render. this helps avoid unnecessary re- renders of child components as they won't treat the function  as a new prop each time the parent re-renders.
+
+4>Performance Optimization : without usecallback each render of a component that uses a function without memoization would create a new function instance. this can lead to increase memory usage and potential performance bottlenecks.
+
+5>Usage with useEffect : when using effect it  is important include any function from the component scope that are used inside the effect in the dependencies array. using usecallback in conjunction with useEffect cam ensure that effect are only re-run when necessary.
+
+6>Caveats : while usecallback can help optimize performance, it is important not to overuse it not every function need to be memoized. overusing useCallback might lead to unNecessary complexity in your codebase.
+
+7>Comparing with useMemo : useCallback and useMemo are similar in that they both memoize values. the difference is that useCallback memoizes function, while useMemo memoizes values(like computed results). use useCallback for function and useMemo for non-function values.
+
+--------#48: #48: React useReducer Hook -------
+
+Q> What is useReducer Hook?
+=> in react the useReducer hook is a built-in hook that allows you to manage complex state logic in a more organized and predictable manner, especially when dealing with state transitions that involve multiple action. it is an alternative to using the useState hook when the state management become more intricate.
+
+-->The primary use cases for useReducer are:   
+1>State and Dispatch : The useReducer hook takes two arguments a reducer function and an initial state. it returns an array with two elements . the current state and a dispatch function. the dispatch function is used to send action to the reducer, which then process the action and returns a new state.
+
+2>Reducer Function : The reducer function is responsible for handling the state transitions based on the action dispatched. it takes two argument : the cureent state and the action being dispatched. it return the new state based on the action logic.
+
+3>Actions : Actions are object that descibe what kind of state change you want to perform. they typically have a type property to identify the action type and additional data as needed.
+
+--------#49: #49: React useContext Hook -------
+
+Q> what is useContext Hook?
+=>  In React, useContext is a React Hook that provides a way to access the value of a context directly in functional components without having to explicitly pass down props through intermediary components. The useContext Hook is part of the Context API, which is a mechanism in React that allows data to be passed through the component tree without having to pass props down manually at every level.
+
+ -->The primary use cases for useContext are: 
+  
+1>Theme Switching : you can use useContext to manage a theme throughout your app. instead of passing the theme prop to every component that needs it you can define a ThemeContext and use useContext to access the current them directly in components.
+2>Authentication : Managing user authentication state across your app is a common use case for useContext. you can create an AuthContext to store the user's authentication status and details. component can then use useContext to access this information and  conditionally render UI component based on the user's authentication status.
+
+3>Localization : if your app supports multiple language, you can use useContext to provide language/Locale informationto various components without passing props down the component tree.
+
+4>Global State Management : While more complex than just using useState, useContext can be used to manage global state that needs to be accessed and modified from multiple components. it is often used in conjunction with the useReducer hook to create a predictable state management solution similar to libraries like redux.
+
+5>Redux Replacement : for smaller application , you might choose to use useContext and the useReducer hooks as a simpler alternative to redux for managing state.
+
+6>Dependency Injection : you can use useContext to provides services or dependencies to components for example, you might have a configContext that provides configuration setting to various part od you app.
+
+7>Custom Theming : if your app requires custome theming based on user  preferences, you can use useContext to provide the theme settings to different parts of the app.
+ 
+8.Caching and Data Fetching : you can use useContext to manage cached data or API responses that multiple components might need access to. 
+
+
+--------#50: #50: #50: React Context API ------- 
+
+Q> what is Context API ?
+=>In React, Context API is a way to manage state and share data throughout your component tree without the need to pass props manually at every level. It's particularly useful for passing down global data or application-wide settings.
+
+->The primary use cases for Context API are:    
+
+1>Provider and Consumer Relationship : 
+-> The context API around the concept of a provider component and consumer component.
+-> The provide component is used to wrap a portion of your componeny tree , making the data available to all naseted components.
+2>Creating a Context :
+-> Create a context the createContext function from the  react module. 
+ example : const myContext = React.createContext(defaultValue);
+
+3>Provider Component :  wrap components with the Provider to give  them access to the context data. pass the data you want to share as a prop to the Provider. 
+4>Consuming the Context : use the consumer component  or the useContext hook to access the context data.
+5>Default Value : the createContext function accepts a default value as an argument. this value is used when a components doesn't have a matching provider in its ancestor tree. Example: const myContext = React.CreateContext(defaultValue);
+6>Updating Context Data : context data can be updated by modifying the state within the provider component. when the context data changes all components consuming that context will re-render.
+
+7>Performance Optimization : to prevent unnecessary re-render, you can use the react.memo higher-order component or the use useMemo hook to wrap components that consume context  data.
+
+8>Multiple Contexts : you can have multiple context providers and consumers in the  same component tree. each context works independently, and  components can  consume data from multiple contexts.
+
+9>Caveats and Considerations : context is best suited for data that is truly global or needs to be accessed by multiple components at different levels. Avoid using  context for fine -garined state that is only needed within a few closely related components.
+
+Q> what is  Difference context API and useContext?
+   => word file -> name Difference context API and useContext
+
+------#51: #51: React useLayoutEffect Hook ------- 
+
+Q> what is useLayoutEffect Hook ?
+=>In React, useLayoutEffect is a React hook that is similar to the useEffect hook, but it fires synchronously after all DOM mutations. It's useful when you need to perform some actions that rely on the most up-to-date DOM layout and before the browser paints to the screen.
+->The primary use cases for useLayoutEffect are:   
+1>useLayoutEffect is a React hook that's used to perform side effects after rendering and before the browser's layout and paint process.
+2> It's very similar to the useEffect hook but fires synchronously after all DOM mutations have been processed, whereas useEffect fires asynchronously after rendering.
+3> it's often used for action that depend on accurate DOM measurement or that need to update the ui before its visually presented to the user.
+
+------#51: #52: React useSyncExternalStore Hook -------
+ 
+Q> What is useSyncExternalStore Hook?
+=> In React, useSyncExternalStore is a React Hook that lets you subscribe to an external store.
+syntax => const snapshot = useSyncExternalStore(subscribe, getSnapshot, getServerSnapshot?)
+                 sub=> callback Finction get=> current value store getser=> return server rendering
+
+use case for useSyncExternalStore are :
+1> call useSyncExternalStore at the top level of your component to read a value from an external data store.
+2> it returns the snapshot of the data in the store. you need to pass two function as arguments.
+3> the subscribe function should subscribe to the store and return a function that unsubscribes.
+4> the getSnpshot function should read a snapshot of the data from the store.
+
+usage
+Subscribing to an external store:
+Most of your react components will only read data from their props, state and context however, sometimes a components needs to read some data from some outside of react that changes over times this includes.
+
+1> third-party state management libraries that hold state outside of react. ex redux
+2> Browser APIs that expose a mutable value and events to subscribes to its chnages.
+
+------#53: #53: React useTransition Hookk -------
+Q> what is useTransition Hook?
+=> n React, useTransition is a React Hook that lets you update the state without blocking the UI.
+syntax => const [isPending , startTransition] = useTransition();
+
+--> the primary use cases for useTransition are:
+ 1> call use transition at the top level of your component to mark some state updates as transitions.
+2> usetransition return an array with exactly two items.
+3> the isPending return flag that tells you whether there is a pending transition.
+4> the startTransition function that lets you mark a state update as a transition.
+
+------#54: #54: React useDeferredValue Hook -------
+
+Q> #54: What is useDeferredValue Hook? 
+=> In React, useDeferredValue is a React Hook that lets you defer updating a part of the UI.
+syntax => const deferredValue = useDeferredValue(value);
+
+--> The primary use cases for useDeferredValue are :
+1> call useDefferedValue at the top level of your component to get a deferred version of that value.
+2> deferring re-rendering for a part of the ui.
+3> you can aslo apply useDeferredValue as a performance optimization. it is useful when a part of your UI is slow to re-render, there's no easy way to optimize it and want to prevent it from blocking the rest of the UI.
+
+------#55: #55: React useId Hook  -------
+Q> what is useId Hook?
+=>  In React, useId is a React Hook for generating unique IDs that can be passed to accessibility attributes.
+ syntax => const id= useID()
+
+the primary use cases for  useID are :
+1> call useID at the top  level  of  you component to generate a unique ID:
+2> useID returns a unique ID string associated with this particular usedID call in this particular component.
+3> if you need to give IDs to multiple related elements, you can all useID to generate a shared prefix for them.
+
+------#56: #56: React Custom Hook  -------
+ 
+Q> What is custom Hook?
+=> In React, Creating a custom hook in React allows you to encapsulate logic and share it across different components. Custom hooks are just JavaScript functions that start with the word "use" and can call other hooks if needed.  
+
+--> the primary use cases for custom hook are :
+ 1> custom hook enables you to extract and share specific pieces of logic(e.g fetching data, handling form state) across multiple component.
+2> insted of duplicating the same logic in different components you can centralize it in a custom hook and reuse it wherever needed.
+
+------#57: #57: React Fetch API Get Method  -------
+Q> what is a method in Rest API ?
+=> In React, In a RESTful API (Representational State Transfer API), a "method" refers to an HTTP request method or verb used to perform operations on resources. These HTTP methods are part of the HTTP protocol and are used to interact with resources (e.g., data or objects) on a server.
+
+--> The primary HTTP method used in Reast API are :
+1>Get : This method is used to retrive data from the server. it should only retrieve data and should not modify the state of the server.
+2> POST : Post is used to create a new resource on the server. it typicallly involves sending data to the server for processing and storage.
+3> PUT : put is used to update an existing resource on  the server or create it if it doesn't exist.it replace the entire resource with the new data provided.
+4> PATCH: Patch is used to partially update on existing resource. it only modifies the specific fields provided in the request, leaving other fields unchanged.
+5> DELETE : Delete is used to remove a resource from the server. after a successful delete request, the resource should no longer be accessiable.
+
+--> These HTTP methods, along with the URL(uniform Resource Locator) or URI(Uniform Resource identifie) of the resource. form the basis of how RESTfu; API are designed. they allow Client(applications or sysytem) to perfrom CRUD(Create, Read, Update, delete) operations on resource exposed by the API.
+
+Q> What is Fetch API?
+=>In React, The Fetch API is a built-in web API in JavaScript that allows you to make network requests, such as fetching data from a server. When using the Fetch API in a React functional component, you can integrate it with your component's lifecycle to handle data fetching and rendering.
+
+--> The primary use case for Fetch API are :
+ 1> Making GET Request : fetching data from a server or an API. use the fetch function to make a get request and handle the responce.
+2> Making POST Request : Sending data to a server . use the fetch function with the post method and provide the body with the data to send.
+3> Handling Errors: Handling error that may occur during an HTTP reuest. check the responce status code and use .catch to handle errors.
+
+website--> fake json placeholder -> https://jsonplaceholder.typicode.com/posts
+
+ 
+------#57: #57:  Axios In React JS  -------
+Q> What is Axios?
+=>In React, Axios is a popular JavaScript library that is commonly used in React applications for making HTTP requests to external resources, such as APIs or web services. It provides a simple and convenient way to send HTTP requests and handle responses.
+--> The primary use cases for axios are :
+1> Making HTTP Request : Axios can be used to make GET.POST,PUT, DELETE and other types of HTTP request. it abstracts the underlying XMLHttpRqeuest or fetch API, provideing a more user-friendly API.
+
+2> Handling Promises : Axios return promises making it easy to work with asynchronous code and handle response using .then() and cath().
+
+3> Request and Response interceptors: Axios allows you to intercept and modify request and response globally for specific request. this can be useful for adding authentication tokens error handling or logging.
+
+4> setting Headers : you can easily set custom headers for your request, which is often necessary for authentication or passing additional information to the server.
+
+5> Canceling reuest :Axios allows you to cancel rquests using a cancel token. this can be helpful for handling user interactions such as canceling a request when a component unmounts.
+
+6> Handling Error : Axios provides a structured way to handle errors and responses, making it easier to display error messages to users or log errors for debugging.
+
+7> use in react application: Axios in commonly used in react appliation to fetch data. from APIs update the state and render UI components based on the fetchedd data.
+
+
+
+
+
+
+------#1: #1: Introduction To Redux Toolkit   -------
+Q> what is Redux Toolkit 
+=>  Redux Toolkit is a library and set of conventions for simplifying the management of state in JavaScript applications using Redux. It was developed by the Redux team to address some of the challenges and complexities associated with setting up and maintaining Redux in a project.
+
+--> The primary use case for Redux toolkit 
+1> Boilerplate Reduction : redux toolkit significantly reduce the amount of boilerplate code you need to write setting up and working with redux. this helps make redux more accessible and less intimidating for devlopers.
+
+2> Simplified store Configuration : it Provides a configureStore function that simplifies the store setup process. this function includes sensible defaults for middleware, such as redux devtools and thunk so you dont have to conififure them manually.
+
+3> Reducers with createSlice: Redux toolkit introduces the createSlice function, which allows you to define reducers more concisely and with less code. it encapsulates the reducer logic, action creators, and initial state in a single phase.
+
+4> immutability : redux toolkit uses the popular immer library under the hood , which allows you to write mutable code within you reducers while ensuring immutability in practice. this makes it easier to update state in a more intuitive and readable way.
+
+5> Action creators : it automatically generates action creators for each slice created using createSlice. these action creators eliminate the need to write expicit action types and action creator function manually.
+
+6> Redux DevTools integration : Redux toolkit integration seamlessly with Redux DevTools, making it easy to inspect and  debug your appliaction state changes and action.
+
+
+
+------#1: #1: React Router Introduction & Installation of React Router v6 in React App  -------
+
+Q> What is React Router DOM v6/
+=>React Router DOM is a popular library for managing navigation and routing in React applications. It helps you create a seamless user experience by allowing you to define different routes and their corresponding components.
+
+-> The primary use cases for React Router V6 are:
+1> Declarative Routing : with v6 you define your routes using JSX components. instead of a <switch> component, you now  use the <Routes> component to declare you routes.
+2>Route Components : Each Route is represented by the <Route> component, where you specify the path and the compoent to render when the path atches.
+3>Hooks-based Approach : React Router v6 heavily relies on react hook. you use the useRoutes hook to handle the routing logic based on the declared routes.  
+4>Nested Routing : v6 improves the support for neasting routing making it easier to create complex layout and nested ui Structures. 
+5>Route Parameters: Route Paremeters are now accessed using hook you use the useParams hook to retrive parameters from the url. 
+6>Navigation:  for navigation you see the useNavigate hook which provides a function to programmatically navigate to different routes. this simplofies navigation compared to the older history object.
+7>Layouts and Layout Routes: v6 introduces the concept of layout routes allowing you to define common layout that specifies sets of routes. this is useful for creating consistent UI structures.
+8> No Render Props: Unlike the previous version v6 gets rid of the render props pattern, instead all routing-relates components are hooks. this simplifies the code and makes it more in line with modern react patterns.
+9>TypeScript Support : react router dom v6 offers improved typeScript support out of thr box making it easier to catch routing-related error during development.
+
+install 
+1>react router --> npm install react-router-dom 
+
+Q> what is Links, Navbar, AnchorTag?
+=>1>Links in react router a <link> component is used to navigated between different views or components in your application. it renders an anchor(<a>) tag with the appropriate href attributes, allowing user to click on the link and navigate to the specified route without causing a full page reload. this helps in creating a single-page application exprience.
+
+2>Navbar : A navigation bar (often abbreviated as "navbar") is a common user interface element used to provide naviagation likes menu within a web application. its typically positioned at the top of a webpage and contains links  to various section or pages of the appiction. a navbar can be implemented using HTML, CSS and JAvaScript. in the context of react router a navbar would likely consist of <link> components to facilitate navigation between different routes.
+
+3> AnchorTag : An anchor (<a>) tag is fundamental HTML element used to create hyperLinks in the context of react Router, while anchor tags can still be used for naviagation using the <link> components provided by react Router is generally preferred. this is because<link> components manage naviagation without causing full page reloads, leading to a smoother user exprience in single-page-application.
+
+Q> #4: Dynamic Routes and Params React?
+=> React Route DOM, routes are perhaps the most imortant part of a react router app. they coupls url segmanet to components, data loading and data mutations. through route nesting complex appliaction layoutes and data dependencies become simple and declarative.
+
+The primary use cases for react router v6 are :
+1> Dynamic Routes : Dynamic routes in react router allow you to create routes with varibale segement in the uURL. these variable segment can chnage and you can capture these chnages to render different components or content based on the url.
+
+2> ParaMeters (params): parameter are values extracted from dynamic segments in the URL. in react router, you can access these parameter through the useParams hook or the match object in class- based components.
+
+Q>#5: React Router Link, NavLink & Active Link?
+Q> What is Difference LInk and NavLink?
+=> React router DOm the link and navlink components are used for navigation within your application. they allow you to create links to different routes in your react application, making it easy to build single-page application with client-side routing.
+
+--> the primary use cases for React router v6 (link and navlink) are:
+1> Link : is a component used to create a hyperLink that navigates to a diffrent routes in your application without causing a full page refresh. it is similar to the traditional HTML <a> tag but it leverages the react router infrastructure to handle routing.
+
+2> NavLink : is a variation of link that provides additional stylinand behavior for the currently active route. it adds class name to the active link, allowing you to apply specific styles to it. you can also cutomize the navlink to add your own active styles and behavior using the activeClassName and isActive props.
+
+#6: React Router useSearchParams
+
+Q> What is useSearchParams Hook?
+=> react router DOM the useSearchParams hook is used to read and modify the query string in the URL for the current location. like react own useState hook , useSearchParams return an array of two values: the current location  search params and a function that may be used to update them. just as react useState hook setSearchParams aslo supports functional update. therefore, you may provide a function that takes a serchParams and returns an update version.
+
+--> the primary use case for react router v6 (useSearchParams) are :
+ 1> the useParams hook will  return an object  with key/value pairs.
+2> the useParams hook is used to read the dynmic params from the current url that were matched by <Route path>.
+
+#7: React Router useNavigate 
+
+Q> What is useNagitive Hook?
+==> react router DOM useNagitive hook is used to programmatically navigate between different routes i  your application. this hook allows you to obtain a function that you can call to navigate  to a specific route.
+
+--> The primary use case for React router v6 (useNagivate) are:
+1> Handling user interactions : you can useNavigate to respond to user interactions like button click, form, submissions, or any other events and then naviagte the user to the appropriate route based on those interactions.
+
+2> Programmatic Redirection : it allows you to implement programmatic redirection. for example you can check some condition or user authentication status and then decide whether to navigate the user to a specific route or back to the login page.
+
+3> conditional routing : you can conditionally render components or navigate based on certain conditions in your application logic. for instance if a user is not authenticated, you can navigate them to a login page, and if they are authenticated , you take them to the main dashboard.
+
+4> integration with state management : useNaviagte can be used in conjunction with state management libraries(e.g redux or react context) to trigger navigation based on chnages in application state.
+
+5> Redirect after form submission : after a from is submission : after a from is submitted successfully, you can use useNavigate to redirect the user to a success page or another relevant page.
+
+6> Implementing navigation guards : you can implement navigation guards or middleware by uing useNavigate to control access  to  certain routes  or to prevent navigation under specfic  conditions(e.g confirming unsaved changes before leaving a page).
+
+ #9: React Router useLocation 
+
+Q> what is useLocation HOOK?
+=> React Router DOM, the useLoaction hook is a custom hook that allows you to  access the current loaction object in your react components. the location object represent the current URL and can be used to extarct information about the pathname, search parameters, and more. this hook is particularly useful for building dynamic and reponsive component that respond to changes in the URL.
+
+-->The primary use case for React Router v6( use Location) are :
+ 1> Accessing Current URL information: the  most fundamental use case is to access information about the current URL 
+ you can extract details such as the pathname, search parameters hash and state associated with the current location.
+
+2> Conditional rendering: you can use the useLocation hook to conditional render components or UI element based on the current route. this is useful for showing or hiding components or modifying teir behavior based on the route.
+
+3> Active Navigation Links : you can highlight or mark navigation links as "active" based on the current route. this helps users easily identify which page they  are on in your navigation menu.
+
+4> Tracking Route changes : you can use useLocation in combination with other Hooks like useEffect to tract route chnages and perfrom action when a specific route is entered or exited.
+
+5> Query parameters Handling : when dealing with query parameters in URLs , you can use useLocation to implement conditional or to trigger navigation programmatically.
 
 
 
@@ -298,6 +714,52 @@ Q> What is Lifting State Up?
 
 
 
+
+
+
+
+
+
+*************************************************************************************************************
+----------- Project Start --------------------
+---- project 1 ----
+React Responsive Business Website Tutorial Using Nested Selector CSS | React Project | Reactjs
+
+In this practical react js project tutorial, I'm going to teach you, step-by-step, how to create and deploy a fully responsive business website from scratch! By the end of this video, you will know how to create a react app from scratch, how to use the react font awesome icons library in your react projects, how to use react useState, useEffect hooks, how to build modern website designs with CSS3 nested selector, how to use React Scroll (to create smooth scroll effect) in your react projects, how to add contact options on your website and more!
+
+---Dependencies using this project----
+1>  npm i react-scroll - 
+2> -> https://fontawesome.com/v6/docs/web/use-with/react/
+    npm i --save @fortawesome/fontawesome-svg-core -
+   # Free icons styles
+   npm i --save @fortawesome/free-solid-svg-icons
+   npm i --save @fortawesome/free-regular-svg-icons
+   npm i --save @fortawesome/free-brands-svg-icons
+    npm i --save @fortawesome/react-fontawesome@latest
+
+   
+
+----------- Project 2 food app ----------
+
+
+------------Dependencies using this project---
+1>React icon - npm i bootstrap-icons.
+2>Bootstrap react  => npm install react-bootstrap bootstrap
+3> react router DOM --> npm install react-router-dom 
+
+
+-------------- FIFA Application ------
+https://www.fifa.com/fifaplus/en/tournaments/mens/worldcup/qatar2022
+
+
+
+
+
+CRUD Application -----> 
+Steps 
+1> npm install react-router-dom
+2> npm install bootstrap
+3> npm install -g json-server
 
 
 

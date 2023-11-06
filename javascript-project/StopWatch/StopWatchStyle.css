@@ -1,0 +1,68 @@
+/* Google Poppins Font  */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* variables */
+:root {
+  --primary-font: "poppins", sans-serif;
+  --white-color: #fff;
+  --blue-color: #150050;
+}
+body {
+  font-family: var(--primary-font);
+  background-image: url(./img1.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.wrapper {
+  width: 800px;
+  margin: auto;
+  color: var(--white-color);
+  text-align: center;
+}
+h1 {
+  font-weight: 900;
+  font-size: 6em;
+  text-transform: uppercase;
+  -webkit-text-stroke: 2px rgb(35, 25, 25);
+  color: white;
+  text-shadow: 1px 10px 3px rgb(211, 181, 175);
+}
+#seconds,
+#tens,
+p {
+  font-size: 3em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.common_btn {
+  border-radius: 5px;
+  background: transparent;
+  border: 1px solid var(--white-color);
+  color: var(--white-color);
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 18px 10px;
+  width: 180px;
+  margin: 10px;
+  outline: none;
+}
+.common_btn:hover,
+.common_btn:focus {
+  transition: all 0.5s ease-in-out;
+  background: var(--blue-color);
+  border: 1px solid var(--blue-color);
+  color: var(--white-color);
+}
